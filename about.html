@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+    /* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a fallback font family */
+    background-image: url(mz.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgba(30, 101, 148, 0.534);
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    height: 75px;
+    display: flex; /* Utilize flexbox for better alignment */
+    align-items: center; /* Align items vertically in the header */
+    justify-content: space-between; /* Align items horizontally with space between */
+}
+
+.logo {
+    height: 55px; /* Adjusted height for better proportion */
+    width: auto; /* Let the width adjust according to the height */
+    margin-right: 10px;
+    font-size: 50px;
+    color: rgb(251, 251, 251);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,h2,h3 {
+   color: aliceblue;
+    font-size: 2em; /* Responsive font size */
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center; /* Center align the heading text */
+}
+
+
+p {
+    background-color: rgba(30, 101, 148, 0.534);
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    color: white;
+    padding: 10px;
+    text-align: right; /* Align text content to the right */
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align list items to the right */
+}
+
+nav ul li {
+    display: inline-block; /* Use inline-block for list items to respect padding */
+    margin-left: 10px; /* Adjusted margin for spacing between items */
+    font-size: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove left margin for the first item */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+    background-color:rgba(30, 101, 148, 0.534);
+    border-radius: 5px;
+}
+
+
+form {
+    display: inline-block;
+    text-align: right; /* Align form content to the right */
+}
+
+form input[type=text] {
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 8px 12px;
+    background-color:  rgba(92, 157, 201, 0.534);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: rgba(30, 101, 148, 0.534);
+    text-align: center;
+}
+
+section {
+    padding: 200px;
+    margin: 20px 0;
+
+    font-family:monospace;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.welcome-section button{
+    background-color:  rgba(92, 157, 201, 0.534);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: right;
+}
+.welcome-section button:hover {
+    background-color: rgba(30, 101, 148, 0.534);
+    text-align: center;
+   
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.image-container img {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section styles */
+.about-section {
+    padding: 40px 20px;
+    background-color: rgba(30, 101, 148, 0.534);
+    text-align: center;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: left;
+    color: #fff;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+H1{
+    font-size:50px ;
+   color:  rgba(30, 101, 148, 0.534);
+}
+
+
+
+</style>
+<body>
+    <h1>ABOUT</h1>
+    <p>Welcome to [MZ COLLECTION] – where style meets purpose, and every piece tells a story.
+ 
+    
+        At [MZ COLLECTION], we believe that clothing is more than just what you wear. It’s a statement of who you are. From the fabrics we select to the designs we create, every element reflects our commitment to quality, style, and individuality.
+        
+        Our Journey
+        Born out of a passion for fashion and a desire to make a difference, [MZ COLLECTION] was founded in [Year] with a simple goal: to offer high-quality, stylish clothing that empowers our customers to look and feel their best. What started as a small idea has grown into a brand that celebrates creativity, comfort, and the art of self-expression.
+        
+        Our Collection
+        We design for those who love fashion, value comfort, and appreciate timeless style. Our collections are thoughtfully curated to cater to all aspects of life – from everyday essentials to statement pieces that turn heads. We prioritize versatility in our designs, ensuring our pieces can effortlessly transition from day to night and season to season.
+        
+        Quality & Craftsmanship
+        We believe that great style should never compromise on quality. That’s why we work closely with skilled artisans and use premium materials to ensure that every piece not only looks great but lasts. Every detail, from stitching to fit, is carefully considered to bring you clothing that stands the test of time.
+        
+        Sustainability & Responsibility
+        At [MZ COLLECTION], we’re committed to making a positive impact. We believe fashion can be both beautiful and responsible. That’s why we prioritize sustainable materials, ethical manufacturing, and conscious practices in every step of our production process. Our goal is to reduce our environmental footprint and create pieces you can feel proud to wear.
+        
+        Join the [MZ COLLECTION]] Community
+        We’re more than just a clothing brand – we’re a community of style enthusiasts who believe in individuality and self-expression. Join us on this journey and become part of a growing family that values quality, creativity, and authenticity.
+        
+        Thank you for choosing [MZ COLLECTION]. We’re excited to be a part of your style journey, and we can’t wait to see how you make our pieces your own.
+        
+        Stay Connected
+        Follow us on [Social Media Links] to get the latest updates, style inspiration, and behind-the-scenes insights. Don’t forget to tag us – we love seeing how you style your favorite [MZ COLLECTION] pieces!
+        
+        This page introduces your brand, highlights key values, and ends with a call to action to engage with the brand on social media. Let me know if you'd like any specific adjustments.</P>
+        
+    
+</body>
+</html>
